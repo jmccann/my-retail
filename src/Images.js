@@ -24,9 +24,7 @@ class Images extends Component {
     const imageList = getImages(this.props.items);
 
     return (
-      <div className="Images">
-        <ImageGallery items={imageList} showPlayButton={false} showFullscreenButton={false} />
-      </div>
+      <ImageGallery items={imageList} showPlayButton={false} showFullscreenButton={false} />
     );
   }
 
