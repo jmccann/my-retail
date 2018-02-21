@@ -19,5 +19,13 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^22.3.0"
+  },
+  "jest": {
+    "collectCoverageFrom" : [
+      "src/*.js",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/src/registerServiceWorker.js",
+      "!<rootDir>/src/index.js"
+    ]
   }
 }
