@@ -8,8 +8,8 @@ class Cart extends Component {
     return (
       <div>
         <Quantity />
-        <Button className="pickup-in-store" color="danger" disabled={this.props.purchasingChannelCode == 1}>Pickup In Store</Button>
-        <Button className="add-to-cart" color="danger" disabled={this.props.purchasingChannelCode == 2}>Add To Cart</Button><br />
+        <Button className="pickup-in-store" color="danger" disabled={this.props.purchasingChannelCode === "1"}>Pickup In Store</Button>
+        <Button className="add-to-cart" color="danger" disabled={this.props.purchasingChannelCode === "2"}>Add To Cart</Button><br />
         find in a store
       </div>
     );
