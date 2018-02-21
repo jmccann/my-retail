@@ -30,10 +30,15 @@ it('renders review rating', () => {
 
 it('renders review title', () => {
   const wrapper = shallow(<ReviewHighlight type='Pro' review={data.CatalogEntryView[0].CustomerReview[0].Pro[0]} />);
-  expect(wrapper.contains(<div><b>Fantastic Blender</b></div>)).toBe(true);
+  expect(wrapper.contains(<div className="review-highlight-title">Fantastic Blender</div>)).toBe(true);
 });
 
 it('renders review comment', () => {
   const wrapper = shallow(<ReviewHighlight type='Pro' review={data.CatalogEntryView[0].CustomerReview[0].Pro[0]} />);
   expect(wrapper.contains(<div>This blender works amazingly, and blends within seconds.  The single serve cups also work really well for smoothies or protein shakes!</div>)).toBe(true);
+});
+
+it('renders review details', () => {
+  const wrapper = shallow(<ReviewHighlight type='Pro' review={data.CatalogEntryView[0].CustomerReview[0].Pro[0]} />);
+  expect(wrapper.contains(<div>Eric - April 18, 2013</div>)).toBe(true);
 });
