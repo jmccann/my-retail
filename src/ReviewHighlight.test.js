@@ -2,6 +2,7 @@ import { shallow, mount, render } from 'enzyme';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Rating from './Rating';
 import ReviewHighlight from './ReviewHighlight';
 import data from './item-data.json';
 
@@ -23,9 +24,10 @@ it('renders a con review', () => {
   expect(wrapper.contains(<div>most helpful 1-2 star review</div>)).toBe(true);
 });
 
-it('renders review rating', () => {
+it('renders <Rating /> component', () => {
   const wrapper = shallow(<ReviewHighlight type='Pro' review={data.CatalogEntryView[0].CustomerReview[0].Pro[0]} />);
-  expect(wrapper.find('img.star').length).toBe(5);
+  expect(wrapper.find(Rating).length).toBe(1);
+  expect(wrapper.find(Rating).props().rating).toBe("5");
 });
 
 it('renders review title', () => {
