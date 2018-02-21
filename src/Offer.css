@@ -1,0 +1,13 @@
+.offer-price {
+  padding: 5px;
+  display: inline;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.offer-qualifier {
+  padding: 5px;
+  display: inline;
+  font-size: small;
+  text-transform: lowercase;
+}
