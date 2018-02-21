@@ -1,5 +1,5 @@
 .review-table {
-  width: 50%;
+  width: 100%;
   display: table;
 }
 
@@ -8,6 +8,6 @@
 }
 
 .review-table-cell {
-  width: 600px;
+  width: 50%;
   display: table-cell;
 }

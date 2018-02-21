@@ -9,21 +9,35 @@ import Offer from './Offer.js';
 import Promotions from './Promotions.js';
 import ReturnPolicy from './ReturnPolicy.js';
 
+import './ItemPage.css';
+
 class ItemPage extends Component {
   render() {
     return (
       <div>
-        <h1>{this.props.item.title}</h1>
-        <Images items={this.props.item.Images} />
-        <CustomerReviews reviews={this.props.item.CustomerReview[0]} />
-        <Offer offer={this.props.item.Offers[0].OfferPrice[0]} />
-        <Promotions promos={this.props.item.Promotions} />
-        <Cart purchasingChannelCode={this.props.item.purchasingChannelCode} />
-        <ReturnPolicy returnPolicy={this.props.item.ReturnPolicy[0]} />
-        <Button >Add To Registry</Button>
-        <Button >Add To List</Button>
-        <Button >Share</Button>
-        <ItemDescription features={this.props.item.ItemDescription[0].features} />
+
+        <div className="page-table">
+          <div className="page-table-row">
+
+            <div className="page-table-cell">
+              <h1>{this.props.item.title}</h1>
+              <Images items={this.props.item.Images} />
+              <CustomerReviews reviews={this.props.item.CustomerReview[0]} />
+            </div>
+
+            <div className="page-table-cell">
+              <Offer offer={this.props.item.Offers[0].OfferPrice[0]} />
+              <Promotions promos={this.props.item.Promotions} />
+              <Cart purchasingChannelCode={this.props.item.purchasingChannelCode} />
+              <ReturnPolicy returnPolicy={this.props.item.ReturnPolicy[0]} />
+              <Button >Add To Registry</Button>
+              <Button >Add To List</Button>
+              <Button >Share</Button>
+              <ItemDescription features={this.props.item.ItemDescription[0].features} />
+            </div>
+
+          </div>
+        </div>
       </div>
     );
   }

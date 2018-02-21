@@ -1,0 +1,14 @@
+.page-table {
+  margin: 100px auto;
+  width: 75%;
+  display: table;
+}
+
+.page-table-row {
+  display: table-row;
+}
+
+.page-table-cell {
+  width: 600px;
+  display: table-cell;
+}
