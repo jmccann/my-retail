@@ -3,12 +3,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Cart from './Cart';
+import Quantity from './Quantity';
 import data from './item-data.json';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(<Cart purchasingChannelCode="0" />, div);
   ReactDOM.unmountComponentAtNode(div);
+});
+
+it('renders <Quantity /> component', () => {
+  const wrapper = shallow(<Cart purchasingChannelCode="0" />);
+  expect(wrapper.find(Quantity).length).toBe(1);
 });
 
 it('has both purchase buttons enabled on purchasingChannelCode 0', () => {

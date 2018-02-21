@@ -2,6 +2,7 @@ import { shallow, mount, render } from 'enzyme';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Cart from './Cart';
 import CustomerReviews from './CustomerReviews';
 import Images from './Images';
 import ItemPage from './ItemPage';
@@ -40,4 +41,9 @@ it('renders <Offer /> component', () => {
 it('renders <Promotions /> component', () => {
   const wrapper = shallow(<ItemPage item={data.CatalogEntryView[0]} />);
   expect(wrapper.find(Promotions).length).toBe(1);
+});
+
+it('renders <Cart /> component', () => {
+  const wrapper = shallow(<ItemPage item={data.CatalogEntryView[0]} />);
+  expect(wrapper.find(Cart).length).toBe(1);
 });
