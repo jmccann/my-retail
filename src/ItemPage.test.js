@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import CustomerReviews from './CustomerReviews';
 import Images from './Images';
 import ItemPage from './ItemPage';
+import Offer from './Offer';
 import data from './item-data.json';
 
 it('renders without crashing', () => {
@@ -28,4 +29,9 @@ it('renders <Images /> component', () => {
 it('renders <CustomerReviews /> component', () => {
   const wrapper = shallow(<ItemPage item={data.CatalogEntryView[0]} />);
   expect(wrapper.find(CustomerReviews).length).toBe(1);
+});
+
+it('renders <Offer /> component', () => {
+  const wrapper = shallow(<ItemPage item={data.CatalogEntryView[0]} />);
+  expect(wrapper.find(Offer).length).toBe(1);
 });
