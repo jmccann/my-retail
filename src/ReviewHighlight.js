@@ -9,6 +9,7 @@ class ReviewHighlight extends Component {
       <div>
         <h3>{this.props.type}</h3>
         <div>{reviewDescription}</div>
+        <hr />
         <div>
           <div>Rating: {this.props.review.overallRating}</div>
           <div><b>{this.props.review.title}</b></div>
