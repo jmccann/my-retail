@@ -1,3 +1,7 @@
+h2 {
+  text-align: center;
+}
+
 .page-table {
   margin: 100px auto;
   width: 75%;
@@ -9,6 +13,6 @@
 }
 
 .page-table-cell {
-  width: 600px;
+  padding: 50px;
   display: table-cell;
 }

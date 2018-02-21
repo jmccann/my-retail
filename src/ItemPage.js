@@ -20,7 +20,7 @@ class ItemPage extends Component {
           <div className="page-table-row">
 
             <div className="page-table-cell">
-              <h1>{this.props.item.title}</h1>
+              <h2>{this.props.item.title}</h2>
               <Images items={this.props.item.Images} />
               <CustomerReviews reviews={this.props.item.CustomerReview[0]} />
             </div>
