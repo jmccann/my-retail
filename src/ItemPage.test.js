@@ -6,6 +6,7 @@ import CustomerReviews from './CustomerReviews';
 import Images from './Images';
 import ItemPage from './ItemPage';
 import Offer from './Offer';
+import Promotions from './Promotions';
 import data from './item-data.json';
 
 it('renders without crashing', () => {
@@ -34,4 +35,9 @@ it('renders <CustomerReviews /> component', () => {
 it('renders <Offer /> component', () => {
   const wrapper = shallow(<ItemPage item={data.CatalogEntryView[0]} />);
   expect(wrapper.find(Offer).length).toBe(1);
+});
+
+it('renders <Promotions /> component', () => {
+  const wrapper = shallow(<ItemPage item={data.CatalogEntryView[0]} />);
+  expect(wrapper.find(Promotions).length).toBe(1);
 });
