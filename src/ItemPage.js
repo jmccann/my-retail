@@ -4,6 +4,7 @@ import Button from 'muicss/lib/react/button';
 import Cart from './Cart.js'
 import CustomerReviews from './CustomerReviews.js';
 import Images from './Images.js';
+import ItemDescription from './ItemDescription.js';
 import Offer from './Offer.js';
 import Promotions from './Promotions.js';
 import ReturnPolicy from './ReturnPolicy.js';
@@ -22,6 +23,7 @@ class ItemPage extends Component {
         <Button >Add To Registry</Button>
         <Button >Add To List</Button>
         <Button >Share</Button>
+        <ItemDescription features={this.props.item.ItemDescription[0].features} />
       </div>
     );
   }

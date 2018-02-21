@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import Cart from './Cart';
 import CustomerReviews from './CustomerReviews';
 import Images from './Images';
+import ItemDescription from './ItemDescription';
 import ItemPage from './ItemPage';
 import Offer from './Offer';
 import Promotions from './Promotions';
@@ -52,4 +53,9 @@ it('renders <Cart /> component', () => {
 it('renders <ReturnPolicy /> component', () => {
   const wrapper = shallow(<ItemPage item={data.CatalogEntryView[0]} />);
   expect(wrapper.find(ReturnPolicy).length).toBe(1);
+});
+
+it('renders <ItemDescription /> component', () => {
+  const wrapper = shallow(<ItemPage item={data.CatalogEntryView[0]} />);
+  expect(wrapper.find(ItemDescription).length).toBe(1);
 });
