@@ -8,6 +8,7 @@ import Images from './Images';
 import ItemPage from './ItemPage';
 import Offer from './Offer';
 import Promotions from './Promotions';
+import ReturnPolicy from './ReturnPolicy';
 import data from './item-data.json';
 
 it('renders without crashing', () => {
@@ -46,4 +47,9 @@ it('renders <Promotions /> component', () => {
 it('renders <Cart /> component', () => {
   const wrapper = shallow(<ItemPage item={data.CatalogEntryView[0]} />);
   expect(wrapper.find(Cart).length).toBe(1);
+});
+
+it('renders <ReturnPolicy /> component', () => {
+  const wrapper = shallow(<ItemPage item={data.CatalogEntryView[0]} />);
+  expect(wrapper.find(ReturnPolicy).length).toBe(1);
 });

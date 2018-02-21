@@ -5,6 +5,7 @@ import CustomerReviews from './CustomerReviews.js';
 import Images from './Images.js';
 import Offer from './Offer.js';
 import Promotions from './Promotions.js';
+import ReturnPolicy from './ReturnPolicy.js';
 
 class ItemPage extends Component {
   render() {
@@ -15,7 +16,8 @@ class ItemPage extends Component {
         <CustomerReviews reviews={this.props.item.CustomerReview[0]} />
         <Offer offer={this.props.item.Offers[0].OfferPrice[0]} />
         <Promotions promos={this.props.item.Promotions} />
-        <Cart purchasingChannelCode={this.props.item.purchasingChannelCode}/>
+        <Cart purchasingChannelCode={this.props.item.purchasingChannelCode} />
+        <ReturnPolicy returnPolicy={this.props.item.ReturnPolicy[0]} />
       </div>
     );
   }
