@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "jest-cli": "^22.3.0",
+    "muicss": "^0.9.36",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-image-gallery": "^0.8.7",
@@ -21,7 +22,7 @@
     "jest": "^22.3.0"
   },
   "jest": {
-    "collectCoverageFrom" : [
+    "collectCoverageFrom": [
       "src/*.js",
       "!<rootDir>/node_modules/",
       "!<rootDir>/src/registerServiceWorker.js",
