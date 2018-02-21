@@ -22,7 +22,7 @@ it('renders item title', () => {
   const wrapper = shallow((
     <ItemPage item={data.CatalogEntryView[0]} />
   ));
-  expect(wrapper.contains(<h1>Ninja™ Professional Blender with Single Serve Blending Cups</h1>)).toBe(true);
+  expect(wrapper.contains(<h2>Ninja™ Professional Blender with Single Serve Blending Cups</h2>)).toBe(true);
 });
 
 it('renders <Images /> component', () => {
