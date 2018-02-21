@@ -1,0 +1,13 @@
+.review-table {
+  width: 50%;
+  display: table;
+}
+
+.review-table-row {
+  display: table-row;
+}
+
+.review-table-cell {
+  width: 600px;
+  display: table-cell;
+}
