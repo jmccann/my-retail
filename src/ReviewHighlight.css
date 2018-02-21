@@ -1,0 +1,10 @@
+h3 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.review-highlight-title {
+  font-size: large;
+  font-weight: bold;
+}

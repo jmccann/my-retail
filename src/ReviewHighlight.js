@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './ReviewHighlight.css';
+
 class ReviewHighlight extends Component {
   render() {
     const reviewDescription =
@@ -12,8 +14,8 @@ class ReviewHighlight extends Component {
         <hr />
         <div>
           <div>Rating: {this.props.review.overallRating}</div>
-          <div><b>{this.props.review.title}</b></div>
-          <div>{this.props.review.review}</div>
+          <div className="review-highlight-title">{this.props.review.title}</div>
+          <div className="review-highlight-comment">{this.props.review.review}</div>
         </div>
       </div>
     );
