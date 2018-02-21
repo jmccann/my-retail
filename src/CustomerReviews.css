@@ -1,3 +1,23 @@
+.overall-review-table {
+  width: 90%;
+  display: table;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.overall-review-table-row {
+  display: table-row;
+}
+
+.overall-review-table-cell {
+  display: table-cell;
+}
+
+.total-reviews {
+  font-weight: bold;
+  text-align: right;
+}
+
 .review-table {
   background-color: rgba(213, 213, 213, 0.3);
   width: 100%;

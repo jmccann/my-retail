@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import CustomerReviews from './CustomerReviews';
+import Rating from './Rating';
 import ReviewHighlight from './ReviewHighlight';
 import data from './item-data.json';
 
@@ -12,14 +13,15 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it('renders overall rating', () => {
+it('renders overall <Rating /> component', () => {
   const wrapper = shallow(<CustomerReviews reviews={data.CatalogEntryView[0].CustomerReview[0]} />);
-  expect(wrapper.contains(<div>Overall: 4</div>)).toBe(true);
+  expect(wrapper.find(Rating).length).toBe(1);
+  expect(wrapper.find(Rating).props().rating).toBe("4");
 });
 
 it('renders total reviews', () => {
   const wrapper = shallow(<CustomerReviews reviews={data.CatalogEntryView[0].CustomerReview[0]} />);
-  expect(wrapper.contains(<div>View all 14 reviews</div>)).toBe(true);
+  expect(wrapper.contains(<div className="total-reviews">View all 14 reviews</div>)).toBe(true);
 });
 
 it('renders 2 <ReviewHighlight /> components', () => {
