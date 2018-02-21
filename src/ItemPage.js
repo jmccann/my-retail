@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from 'muicss/lib/react/button';
 
 import Cart from './Cart.js'
 import CustomerReviews from './CustomerReviews.js';
@@ -18,6 +19,9 @@ class ItemPage extends Component {
         <Promotions promos={this.props.item.Promotions} />
         <Cart purchasingChannelCode={this.props.item.purchasingChannelCode} />
         <ReturnPolicy returnPolicy={this.props.item.ReturnPolicy[0]} />
+        <Button >Add To Registry</Button>
+        <Button >Add To List</Button>
+        <Button >Share</Button>
       </div>
     );
   }
