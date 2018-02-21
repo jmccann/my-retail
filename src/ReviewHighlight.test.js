@@ -25,7 +25,7 @@ it('renders a con review', () => {
 
 it('renders review rating', () => {
   const wrapper = shallow(<ReviewHighlight type='Pro' review={data.CatalogEntryView[0].CustomerReview[0].Pro[0]} />);
-  expect(wrapper.contains(<div>Rating: 5</div>)).toBe(true);
+  expect(wrapper.find('img.star').length).toBe(5);
 });
 
 it('renders review title', () => {
