@@ -1,0 +1,22 @@
+.quantity-container {
+  margin: 20px 0 20px 0;
+}
+
+.quantity {
+  display: inline;
+}
+
+div.quantity {
+  padding-right: 40px;
+}
+
+input.quantity {
+  border:none;
+  text-align: center;
+  width: 50px;
+  font-weight: bold;
+}
+
+.decrease, .increase {
+  font-weight: bold;
+}

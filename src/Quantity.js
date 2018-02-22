@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import Button from 'muicss/lib/react/button';
 
+import './Quantity.css';
+
 class Quantity extends Component {
   constructor(props) {
     super(props);
@@ -27,10 +29,11 @@ class Quantity extends Component {
 
   render() {
     return (
-      <div key={this.state.quantity}>
-        <Button className="decrease" variant="fab" disabled={this.state.disabled} onClick={this.decreaseQuantity}>-</Button>
+      <div key={this.state.quantity} className="quantity-container">
+        <div className="quantity">quantity</div>
+        <Button className="decrease" size="small" variant="fab" disabled={this.state.disabled} onClick={this.decreaseQuantity}>-</Button>
         <input className="quantity" type="text" defaultValue={this.state.quantity} />
-        <Button className="increase" variant="fab" onClick={this.increaseQuantity}>+</Button>
+        <Button className="increase" size="small" variant="fab" onClick={this.increaseQuantity}>+</Button>
       </div>
     );
   }
