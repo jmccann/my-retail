@@ -32,9 +32,9 @@ class ItemPage extends Component {
               <hr />
               <Cart purchasingChannelCode={this.props.item.purchasingChannelCode} />
               <ReturnPolicy returnPolicy={this.props.item.ReturnPolicy[0]} />
-              <Button >Add To Registry</Button>
-              <Button >Add To List</Button>
-              <Button >Share</Button>
+              <button className="grey-button">Add To Registry</button>
+              <button className="grey-button">Add To List</button>
+              <button className="grey-button">Share</button>
               <ItemDescription features={this.props.item.ItemDescription[0].features} />
             </div>
 
