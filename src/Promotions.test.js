@@ -13,5 +13,5 @@ it('renders without crashing', () => {
 
 it('generates a list of promotions', () => {
   const wrapper = shallow(<Promotions promos={data.CatalogEntryView[0].Promotions} />);
-  expect(wrapper.find('li.promo-item').length).toBe(2);
+  expect(wrapper.find('div.promo-item').length).toBe(2);
 });

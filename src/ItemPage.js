@@ -27,7 +27,9 @@ class ItemPage extends Component {
 
             <div className="page-table-cell">
               <Offer offer={this.props.item.Offers[0].OfferPrice[0]} />
+              <hr />
               <Promotions promos={this.props.item.Promotions} />
+              <hr />
               <Cart purchasingChannelCode={this.props.item.purchasingChannelCode} />
               <ReturnPolicy returnPolicy={this.props.item.ReturnPolicy[0]} />
               <Button >Add To Registry</Button>

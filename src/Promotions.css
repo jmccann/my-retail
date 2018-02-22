@@ -1,0 +1,9 @@
+.promo-item {
+  color: red;
+}
+
+.promo-details {
+  display: inline;
+  padding: 5px;
+  vertical-align: middle;
+}
