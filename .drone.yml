@@ -1,0 +1,17 @@
+pipeline:
+  test:
+    image: node:9
+    commands:
+      - npm test
+
+  build:
+    image: plugins/docker:17.05
+    pull: true
+    dry_run: true
+    repo: jmccann/my-retail
+    tag: latest
+
+  deploy:
+    image: alpine:3.7
+    commands:
+      - echo "Deploying..."
