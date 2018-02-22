@@ -1,0 +1,14 @@
+.cart-table {
+  width: 100%;
+  display: table;
+}
+
+.cart-row {
+  display: table-row;
+  text-align: center;
+}
+
+.cart-cell {
+  width: 50%;
+  display: table-cell;
+}
