@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Button from 'muicss/lib/react/button';
 
 import Cart from './Cart.js'
 import CustomerReviews from './CustomerReviews.js';
