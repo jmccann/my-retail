@@ -13,10 +13,10 @@ it('renders without crashing', () => {
 
 it('shows the price', () => {
   const wrapper = shallow(<Offer offer={data.CatalogEntryView[0].Offers[0].OfferPrice[0]} />);
-  expect(wrapper.contains(<div>$139.99 Online Price</div>)).toBe(true);
+  expect(wrapper.contains(<div className="offer-price">$139.99</div>)).toBe(true);
 });
 
 it('shows the price qualifier', () => {
   const wrapper = shallow(<Offer offer={data.CatalogEntryView[0].Offers[0].OfferPrice[0]} />);
-  expect(wrapper.contains(<div>$139.99 Online Price</div>)).toBe(true);
+  expect(wrapper.contains(<div className="offer-qualifier">Online Price</div>)).toBe(true);
 });
