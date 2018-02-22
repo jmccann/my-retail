@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './ItemDescription.css';
+
 class ItemDescription extends Component {
   render() {
     const listItems = this.props.features.map((feature, index) =>
@@ -7,8 +9,9 @@ class ItemDescription extends Component {
     );
 
     return (
-      <div>
-        <ul>{listItems}</ul>
+      <div className="item-description-container">
+        <div className="item-title">Product Highlights</div>
+        <ul className="item-description-list">{listItems}</ul>
       </div>
     );
   }

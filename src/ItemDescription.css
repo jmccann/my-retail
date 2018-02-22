@@ -1,0 +1,16 @@
+.item-description-container {
+  padding: 20px;
+  color: grey;
+}
+
+.item-title {
+  color: black;
+  font-size: xx-large;
+  text-transform: lowercase;
+  padding-bottom: 20px;
+}
+
+.item-description-list {
+  list-style-position: inside;
+  padding-left:0;
+}
