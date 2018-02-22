@@ -1,0 +1,30 @@
+.return-row {
+  color: grey;
+  display: table-row;
+  vertical-align: middle;
+}
+
+.return-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.return-container {
+  padding: 10px;
+}
+
+.vl {
+  vertical-align: middle;
+  border-left: 1px solid grey;
+  height: 30px;
+}
+
+.return-title {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.return-policy {
+  padding: 10px;
+  font-size: x-small;
+}
