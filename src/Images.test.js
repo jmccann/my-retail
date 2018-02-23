@@ -1,15 +1,12 @@
-import { shallow, mount, render } from 'enzyme';
+import { shallow } from 'enzyme';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import ImageGallery from 'react-image-gallery';
 
 import Images from './Images';
 import data from './item-data.json';
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Images items={data.CatalogEntryView[0].Images} />, div);
-  ReactDOM.unmountComponentAtNode(div);
+  shallow(<Images items={data.CatalogEntryView[0].Images} />);
 });
 
 it('renders <ImageGallery /> component', () => {

@@ -1,15 +1,12 @@
-import { shallow, mount, render } from 'enzyme';
+import { shallow } from 'enzyme';
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 import Rating from './Rating';
 import ReviewHighlight from './ReviewHighlight';
 import data from './item-data.json';
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<ReviewHighlight type='Pro' review={data.CatalogEntryView[0].CustomerReview[0].Pro[0]} />, div);
-  ReactDOM.unmountComponentAtNode(div);
+  shallow(<ReviewHighlight type='Pro' review={data.CatalogEntryView[0].CustomerReview[0].Pro[0]} />);
 });
 
 it('renders a pro review', () => {

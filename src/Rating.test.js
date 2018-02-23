@@ -1,13 +1,10 @@
-import { shallow, mount, render } from 'enzyme';
+import { shallow } from 'enzyme';
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 import Rating from './Rating';
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Rating rating="4" />, div);
-  ReactDOM.unmountComponentAtNode(div);
+  shallow(<Rating rating="4" />);
 });
 
 it('renders 5 stars', () => {

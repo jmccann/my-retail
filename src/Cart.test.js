@@ -1,15 +1,11 @@
-import { shallow, mount, render } from 'enzyme';
+import { shallow } from 'enzyme';
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 import Cart from './Cart';
 import Quantity from './Quantity';
-import data from './item-data.json';
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Cart purchasingChannelCode="0" />, div);
-  ReactDOM.unmountComponentAtNode(div);
+  shallow(<Cart purchasingChannelCode="0" />);
 });
 
 it('renders <Quantity /> component', () => {

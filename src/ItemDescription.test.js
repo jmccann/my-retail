@@ -1,14 +1,11 @@
-import { shallow, mount, render } from 'enzyme';
+import { shallow } from 'enzyme';
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 import ItemDescription from './ItemDescription';
 import data from './item-data.json';
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<ItemDescription features={data.CatalogEntryView[0].ItemDescription[0].features} />, div);
-  ReactDOM.unmountComponentAtNode(div);
+  shallow(<ItemDescription features={data.CatalogEntryView[0].ItemDescription[0].features} />);
 });
 
 it('generates a list of features', () => {

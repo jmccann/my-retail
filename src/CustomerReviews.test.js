@@ -1,6 +1,5 @@
-import { shallow, mount, render } from 'enzyme';
+import { shallow } from 'enzyme';
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 import CustomerReviews from './CustomerReviews';
 import Rating from './Rating';
@@ -8,9 +7,7 @@ import ReviewHighlight from './ReviewHighlight';
 import data from './item-data.json';
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<CustomerReviews reviews={data.CatalogEntryView[0].CustomerReview[0]} />, div);
-  ReactDOM.unmountComponentAtNode(div);
+  shallow(<CustomerReviews reviews={data.CatalogEntryView[0].CustomerReview[0]} />);
 });
 
 it('renders overall <Rating /> component', () => {

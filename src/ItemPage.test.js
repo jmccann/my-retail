@@ -1,6 +1,5 @@
-import { shallow, mount, render } from 'enzyme';
+import { shallow, } from 'enzyme';
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 import Cart from './Cart';
 import CustomerReviews from './CustomerReviews';
@@ -13,15 +12,11 @@ import ReturnPolicy from './ReturnPolicy';
 import data from './item-data.json';
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<ItemPage item={data.CatalogEntryView[0]} />, div);
-  ReactDOM.unmountComponentAtNode(div);
+  shallow(<ItemPage item={data.CatalogEntryView[0]} />);
 });
 
 it('renders item title', () => {
-  const wrapper = shallow((
-    <ItemPage item={data.CatalogEntryView[0]} />
-  ));
+  const wrapper = shallow(<ItemPage item={data.CatalogEntryView[0]} />);
   expect(wrapper.contains(<h2>Ninja™ Professional Blender with Single Serve Blending Cups</h2>)).toBe(true);
 });
 
