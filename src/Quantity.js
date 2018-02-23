@@ -29,17 +29,22 @@ class Quantity extends Component {
   render() {
     return (
       <div key={this.state.quantity} className="quantity-container">
-        <div className="quantity">quantity</div>
-        <Button className="decrease"
-                bsSize="small"
-                disabled={this.state.disabled}
-                onClick={this.decreaseQuantity}>-</Button>
-        <input className="quantity"
-               type="text"
-               defaultValue={this.state.quantity} />
-        <Button className="increase"
-                bsSize="small"
-                onClick={this.increaseQuantity}>+</Button>
+        <div className="quantity-box">
+          <div className="quantity-text">quantity:</div>
+          <div className="quantity-counter">
+            <Button className="quantity-decrease"
+                    bsSize="small"
+                    disabled={this.state.disabled}
+                    onClick={this.decreaseQuantity}>-</Button>
+            <input className="quantity-input"
+                   type="text"
+                   defaultValue={this.state.quantity} />
+            <Button className="quantity-increase"
+                    bsSize="small"
+                    onClick={this.increaseQuantity}>+</Button>
+          </div>
+        </div>
+        <div />
       </div>
     );
   }
