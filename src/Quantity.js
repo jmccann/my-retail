@@ -28,7 +28,7 @@ class Quantity extends Component {
 
   render() {
     return (
-      <div key={this.state.quantity} className="quantity-container">
+      <div className="quantity-container">
         <div className="quantity-box">
           <div className="quantity-text">quantity:</div>
           <div className="quantity-counter">
@@ -36,8 +36,10 @@ class Quantity extends Component {
                     bsSize="small"
                     disabled={this.state.disabled}
                     onClick={this.decreaseQuantity}>-</Button>
-            <input className="quantity-input"
+            <input key={this.state.quantity}
+                   className="quantity-input"
                    type="text"
+                   readOnly
                    defaultValue={this.state.quantity} />
             <Button className="quantity-increase"
                     bsSize="small"
