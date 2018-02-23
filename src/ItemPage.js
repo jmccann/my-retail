@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from 'react-bootstrap/lib/Button';
 
 import './styles/ItemPage.css';
 import Cart from './Cart.js'
@@ -28,9 +29,9 @@ class ItemPage extends Component {
           <div><Cart purchasingChannelCode={this.props.item.purchasingChannelCode} /></div>
           <div><ReturnPolicy returnPolicy={this.props.item.ReturnPolicy[0]} /></div>
           <div>
-            <button className="grey-button">Add To Registry</button>
-            <button className="grey-button">Add To List</button>
-            <button className="grey-button">Share</button>
+            <Button className="grey-button">Add To Registry</Button>
+            <Button className="grey-button">Add To List</Button>
+            <Button className="grey-button">Share</Button>
           </div>
           <div><ItemDescription features={this.props.item.ItemDescription[0].features} /></div>
           <div><CustomerReviews reviews={this.props.item.CustomerReview[0]} /></div>
