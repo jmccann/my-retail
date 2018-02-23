@@ -8,3 +8,9 @@ h3 {
   font-size: large;
   font-weight: bold;
 }
+
+.review-highlight-hr {
+  border-top: 1px solid #cccccc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

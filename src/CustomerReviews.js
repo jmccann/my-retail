@@ -21,10 +21,10 @@ class CustomerReviews extends Component {
         <div className="review-table">
           <div className="review-table-row">
             <div className="review-table-cell">
-              <ReviewHighlight type='Pro' review={this.props.reviews.Pro[0]} />
+              <ReviewHighlight review={this.props.reviews.Pro[0]} />
             </div>
             <div className="review-table-cell">
-              <ReviewHighlight type='Con' review={this.props.reviews.Con[0]} />
+              <ReviewHighlight review={this.props.reviews.Con[0]} />
             </div>
           </div>
         </div>

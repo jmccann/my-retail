@@ -5,8 +5,10 @@ import Rating from './Rating.js'
 
 class ReviewHighlight extends Component {
   render() {
+    const reviewType =
+      this.props.review.overallRating > 3 ? 'Pro' : 'Con';
     const reviewDescription =
-      this.props.type === 'Pro' ? "most helpful 4-5 star review" : "most helpful 1-2 star review";
+      reviewType === 'Pro' ? "most helpful 4-5 star review" : "most helpful 1-2 star review";
 
     const dateFormat = new Intl.DateTimeFormat('en-US', {
       month: 'long',
@@ -17,9 +19,9 @@ class ReviewHighlight extends Component {
 
     return (
       <div>
-        <h3>{this.props.type}</h3>
+        <h3>{reviewType}</h3>
         <div>{reviewDescription}</div>
-        <hr />
+        <hr className="review-highlight-hr"/>
         <div>
           <Rating rating={this.props.review.overallRating} />
           <div className="review-highlight-title">{this.props.review.title}</div>
