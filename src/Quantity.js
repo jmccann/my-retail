@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-
-import Button from 'muicss/lib/react/button';
+import Button from 'react-bootstrap/lib/Button';
 
 import './styles/Quantity.css';
 
@@ -31,9 +30,18 @@ class Quantity extends Component {
     return (
       <div key={this.state.quantity} className="quantity-container">
         <div className="quantity">quantity</div>
-        <Button className="decrease" size="small" variant="fab" disabled={this.state.disabled} onClick={this.decreaseQuantity}>-</Button>
-        <input className="quantity" type="text" defaultValue={this.state.quantity} />
-        <Button className="increase" size="small" variant="fab" onClick={this.increaseQuantity}>+</Button>
+        <Button className="decrease"
+                bsSize="small"
+                bsStyle="quantity"
+                disabled={this.state.disabled}
+                onClick={this.decreaseQuantity}>-</Button>
+        <input className="quantity"
+               type="text"
+               defaultValue={this.state.quantity} />
+        <Button className="increase"
+                bsSize="small"
+                bsStyle="quantity"
+                onClick={this.increaseQuantity}>+</Button>
       </div>
     );
   }
