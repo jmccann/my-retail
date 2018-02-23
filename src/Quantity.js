@@ -32,7 +32,6 @@ class Quantity extends Component {
         <div className="quantity">quantity</div>
         <Button className="decrease"
                 bsSize="small"
-                bsStyle="quantity"
                 disabled={this.state.disabled}
                 onClick={this.decreaseQuantity}>-</Button>
         <input className="quantity"
@@ -40,7 +39,6 @@ class Quantity extends Component {
                defaultValue={this.state.quantity} />
         <Button className="increase"
                 bsSize="small"
-                bsStyle="quantity"
                 onClick={this.increaseQuantity}>+</Button>
       </div>
     );
