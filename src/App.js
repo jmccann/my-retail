@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
+
+import './styles/App.css';
 import ItemPage from './ItemPage.js';
+
 import data from './item-data.json';
 
 class App extends Component {

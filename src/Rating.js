@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import './Rating.css';
-import redStar from './red-star.svg';
-import greyStar from './grey-star.svg';
+import './styles/Rating.css';
+import redStar from './images/red-star.svg';
+import greyStar from './images/grey-star.svg';
 
 class Rating extends Component {
   render() {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
+import './styles/ReviewHighlight.css';
 import Rating from './Rating.js'
-import './ReviewHighlight.css';
 
 class ReviewHighlight extends Component {
   render() {

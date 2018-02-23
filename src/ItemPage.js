@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import './styles/ItemPage.css';
 import Cart from './Cart.js'
 import CustomerReviews from './CustomerReviews.js';
 import Images from './Images.js';
@@ -7,8 +8,6 @@ import ItemDescription from './ItemDescription.js';
 import Offer from './Offer.js';
 import Promotions from './Promotions.js';
 import ReturnPolicy from './ReturnPolicy.js';
-
-import './ItemPage.css';
 
 class ItemPage extends Component {
   render() {

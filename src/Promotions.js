@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import './Promotions.css';
-import redTag from './red-tag.svg';
+import './styles/Promotions.css';
+import redTag from './images/red-tag.svg';
 
 class Promotions extends Component {
   render() {

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import Button from 'muicss/lib/react/button';
 
+import './styles/Cart.css';
 import Quantity from './Quantity.js';
-
-import './Cart.css';
 
 class Cart extends Component {
   render() {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Button from 'muicss/lib/react/button';
 
-import './Quantity.css';
+import './styles/Quantity.css';
 
 class Quantity extends Component {
   constructor(props) {

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
+import './styles/CustomerReviews.css';
 import Rating from './Rating.js';
 import ReviewHighlight from './ReviewHighlight.js';
-
-import './CustomerReviews.css';
 
 class CustomerReviews extends Component {
   render() {
