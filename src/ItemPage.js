@@ -15,7 +15,7 @@ class ItemPage extends Component {
     return (
       <div>
 
-        <div className="container">
+        <div className="item-page-container">
           <div className="carousel">
             <h2>{this.props.item.title}</h2>
             <Images items={this.props.item.Images} />
