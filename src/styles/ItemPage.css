@@ -67,3 +67,7 @@ h2 {
   padding: 50px;
   display: table-cell;
 }
+
+.page-hr {
+  border-top: 1px solid #cccccc;
+}

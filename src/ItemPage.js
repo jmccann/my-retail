@@ -22,9 +22,9 @@ class ItemPage extends Component {
           </div>
           <div><Offer offer={this.props.item.Offers[0].OfferPrice[0]} /></div>
           <div>
-            <hr />
+            <hr className="page-hr" />
             <Promotions promos={this.props.item.Promotions} />
-            <hr />
+            <hr className="page-hr" />
           </div>
           <div><Cart purchasingChannelCode={this.props.item.purchasingChannelCode} /></div>
           <div><ReturnPolicy returnPolicy={this.props.item.ReturnPolicy[0]} /></div>
