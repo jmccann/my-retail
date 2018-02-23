@@ -18,7 +18,7 @@ it('renders overall <Rating /> component', () => {
 
 it('renders total reviews', () => {
   const wrapper = shallow(<CustomerReviews reviews={data.CatalogEntryView[0].CustomerReview[0]} />);
-  expect(wrapper.contains(<div className="total-reviews">View all 14 reviews</div>)).toBe(true);
+  expect(wrapper.contains(<div className="overall-review-table-cell total-reviews">View all 14 reviews</div>)).toBe(true);
 });
 
 it('renders 2 <ReviewHighlight /> components', () => {
