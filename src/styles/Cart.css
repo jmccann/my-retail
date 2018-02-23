@@ -14,12 +14,28 @@
   display: table-cell;
 }
 
-.btn-black, .btn-black:hover {
-  background-color: black;
+.add-to-cart {
+  background-image: linear-gradient(to bottom, #ff0000 0%, #cc0000 100%);
+  border-color: white;
+  color: white;
+  text-shadow: unset;
+  text-transform: uppercase;
+}
+
+.add-to-cart:focus, .add-to-cart:hover {
+  background-color: #cc0000;
   color: white;
 }
 
-.btn-red, .btn-red:hover {
-  background-color: red;
+.pickup-in-store {
+  background-image: linear-gradient(to bottom, #666666 0%, #000000 100%);
+  border-color: white;
+  color: white;
+  text-shadow: unset;
+  text-transform: uppercase;
+}
+
+.pickup-in-store:focus, .pickup-in-store:hover {
+  background-color: #000000;
   color: white;
 }

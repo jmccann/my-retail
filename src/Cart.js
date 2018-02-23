@@ -15,7 +15,6 @@ class Cart extends Component {
             <div className="cart-cell">
               <Button className="pickup-in-store"
                       disabled={this.props.purchasingChannelCode === "1"}
-                      bsStyle="black"
                       block>
                 Pickup In Store
               </Button>
@@ -23,7 +22,6 @@ class Cart extends Component {
             <div className="cart-cell">
               <Button className="add-to-cart"
                       disabled={this.props.purchasingChannelCode === "2"}
-                      bsStyle="red"
                       block>
                 Add To Cart
               </Button>
