@@ -6,8 +6,8 @@ pipeline:
 
   build:
     image: plugins/docker:17.05
+    secrets: [ docker_username, docker_password ]
     pull: true
-    dry_run: true
     repo: jmccann/my-retail
     tag: latest
 
