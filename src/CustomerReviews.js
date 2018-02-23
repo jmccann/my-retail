@@ -14,7 +14,7 @@ class CustomerReviews extends Component {
             <div className="overall-review-table-cell"><Rating rating={this.props.reviews.consolidatedOverallRating} description="overall" size="30px" /></div>
             <div className="overall-review-table-cell"></div>
             <div className="overall-review-table-cell"></div>
-            <div className="overall-review-table-cell"><div className="total-reviews">View all {this.props.reviews.totalReviews} reviews</div></div>
+            <div className="overall-review-table-cell total-reviews">View all {this.props.reviews.totalReviews} reviews</div>
           </div>
         </div>
 
